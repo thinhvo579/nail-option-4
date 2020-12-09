@@ -1,0 +1,976 @@
+@font-face {
+    font-family: 'Arapey';
+    src: url("../fonts/Arapey-Regular/Arapey-Regular.eot");
+    src: url("../fonts/Arapey-Regular/Arapey-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Arapey-Regular/Arapey-Regular.woff2") format("woff2"), url("../fonts/Arapey-Regular/Arapey-Regular.woff") format("woff"), url("../fonts/Arapey-Regular/Arapey-Regular.ttf") format("truetype"), url("../fonts/Arapey-Regular/Arapey-Regular.svg#Arapey-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cameliya Stark';
+  src: url("../fonts/CameliyaStark/CameliyaStark.eot");
+  src: url("../fonts/CameliyaStark/CameliyaStark.eot?#iefix") format("embedded-opentype"), url("../fonts/CameliyaStark/CameliyaStark.woff2") format("woff2"), url("../fonts/CameliyaStark/CameliyaStark.woff") format("woff"), url("../fonts/CameliyaStark/CameliyaStark.ttf") format("truetype"), url("../fonts/CameliyaStark/CameliyaStark.svg#CameliyaStark") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aku & Kamu';
+  src: url("../fonts/AkuKamu/AkuKamu.eot");
+  src: url("../fonts/AkuKamu/AkuKamu.eot?#iefix") format("embedded-opentype"), url("../fonts/AkuKamu/AkuKamu.woff2") format("woff2"), url("../fonts/AkuKamu/AkuKamu.woff") format("woff"), url("../fonts/AkuKamu/AkuKamu.ttf") format("truetype"), url("../fonts/AkuKamu/AkuKamu.svg#Aku&Kamu") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+.header__logo {
+    margin-top: 22px;
+    margin-bottom: 105px;
+}
+
+.header__logo a {
+    display: block;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header__wrap-nav {
+    width: 23.4375%;
+    position: relative;
+}
+
+.header__banner {
+    width: 46.927%;
+}
+
+.header__social {
+    width: 11.4583%;
+}
+
+.header__content {
+    width: 11.7708%;
+}
+
+.header-nav {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.header__wrap-nav {
+    background-color: #eddacc;
+}
+
+.nav-menu {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav-menu {
+    padding-left: 80px;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.nav-menu li {
+    padding: 12px 0;
+}
+
+.nav-menu a {
+    font-size: 20px;
+    color: #777777;
+    text-transform: uppercase;
+    position: relative;
+    transition: font-size .3s;
+}
+
+.nav-menu a:hover {
+    font-size: 53px;
+    color: #000000;
+}
+
+.nav-menu a::before {
+    position: absolute;
+    content: '';
+    left: -140px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 120px;
+    height: 10px;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.nav-menu .active a::before,
+.nav-menu a:hover::before {
+    opacity: 1;
+}
+
+.nav-menu .active a {
+    font-size: 53px;
+    color: #000000;
+}
+
+.nav__wrapper {
+    position: relative;
+}
+
+.header-banner-small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.social-media ul a {
+    color: #acacac;
+}
+
+.header__social {
+    position: relative;
+}
+
+.header__social .social-media {
+    position: absolute;
+    right: 30px;
+    top: 47.3%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.header__social .social-media a {
+    font-size: 18px;
+}
+
+.header__social .social-media ul {
+    position: relative;
+}
+
+.header__social .social-media ul::after {
+    position: absolute;
+    content: 'FOLLOW US ON';
+    font-size: 20px;
+    color: #232323;
+    transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    bottom: -69px;
+    left: -97px;
+    height: 20px;
+    width: 200px;
+}
+
+.header__social .social-media li {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.header__content-photo-text {
+    position: relative;
+    display: inline-block;
+}
+
+.header__content-photo-text::after {
+    position: absolute;
+    content: '';
+    width: 43%;
+    height: 148%;
+    background-color: #eddacc;
+    right: -28%;
+    top: 0;
+    z-index: -1;
+}
+
+.header__slick-number {
+    position: absolute;
+    left: 12%;
+    bottom: 0;
+}
+
+.header__slick-number .slick-number {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.header__slick-number .slick-number p,
+    .header__slick-number .slick-number h6 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.header__slick-number .slick-number p {
+    color: #232323;
+    position: relative;
+}
+
+.header__slick-number .slick-number h6 {
+    color: #777777;
+}
+
+.header__slick-number .slick-number p:first-child {
+    padding-right: 80px;
+}
+
+.header__slick-number .slick-number p:first-child:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: #000000;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__wrapper {
+    position: relative;
+}
+
+#header {
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+
+.welcome .wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 105px;
+}
+
+.welcome__photo {
+    width: 44.789%;
+}
+
+.welcome__content {
+    width: 560px;
+}
+
+.first-title {
+    text-align: center;
+}
+
+.first-title h2 {
+    font-size: 120px;
+    color: #dfc7b5;
+    font-family: "Cameliya Stark";
+    text-transform: capitalize;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.first-title h3 {
+    font-size: 30px;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+.welcome__content .second-title h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.welcome__content .qoute h6 {
+    font-size: 18px;
+    color: #232323;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 28px;
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 1.3;
+    width: 97%;
+}
+
+.welcome__content .qoute h6::after {
+    position: absolute;
+    content: '';
+    background-color: #dfc7b5;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.title-40 h1 {
+    font-size: 40px;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 18px;
+    color: #232323;
+    line-height: 1.4;
+}
+
+.sp-top {
+    background-color: #eddacc;
+}
+
+.wrapper {
+    max-width: 1310px;
+}
+
+.welcome .sp-wrapper {
+    max-width: 64.0625%;
+    margin-left: 14.15%;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.specials .sp-wrapper {
+    margin-left: 14.15%;
+    width: 68.23%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.welcome .wrapper {
+    margin-left: 14.15%;
+}
+
+.specials-title {
+    text-align: center;
+}
+
+.specials-title h3 {
+    font-size: 40px;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+.specials-title h2 {
+    font-size: 60px;
+    color: #232323;
+    font-family: "Cameliya Stark";
+}
+
+.specials {
+    position: relative;
+}
+
+.specials .sp-top {
+    padding-top: 125px;
+}
+
+.specials .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.specials .right-photo {
+    width: 42.7%;
+    position: relative;
+    z-index: 1;
+}
+
+.specials .left-content {
+    width: 45.8%;
+    position: relative;
+    z-index: 1;
+}
+
+.specials .left-content .first-title {
+    text-align: center;
+}
+
+.specials h1 {
+    font-size: 180px;
+    text-transform: uppercase;
+    font-family: "Aku & Kamu";
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: -120px;
+    bottom: 60px;
+}
+
+.specials .off-20 {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-34%);
+    -moz-transform: translateX(-34%);
+    -webkit-transform: translateX(-34%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.specials .link-special {
+    position: relative;
+    padding-left: 20px;
+}
+
+.specials .link-special a {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;
+    background-image: url(../images/sp-button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.specials .link-special a:hover {
+    background-color: #dfc7b5;
+}
+
+.services .list-categories li a:hover,
+.services .list-categories li.active a {
+    background-color: #eddacc;
+    color: #232323;
+}
+
+.services {
+    background-color: #f6f6f6;
+    padding-top: 235px;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+.services::after, .services::before {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.services::before {
+    width: 390px;
+    height: 242px;
+    background-image: url(../images/se1.png);
+    top: 65px;
+    left: 0;
+}
+
+.services::after {
+    width: 498px;
+    height: 291px;
+    background-image: url(../images/se2.png);
+    right: 0;
+    bottom: 0;
+}
+
+.services .list-categories {
+    margin-top: 47px;
+}
+
+.services .list-categories ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -80px;
+    margin-right: -80px;
+    justify-content: space-between;
+    margin-bottom: 67px;
+}
+
+.services .list-categories li a {
+    font-size: 22px;
+    color: #dfc7b5;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid #eddacc;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .list-categories li span {
+    font-size: 18px;
+}
+
+.services .list-categories li.kid {
+    width: 180px;
+}
+
+.services .s-title {
+    margin-top: -15px;
+}
+
+.services .s-title h2 {
+    font-size: 48px;
+    color: #232323;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 22px;
+}
+
+.services .s-title h2::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    background-color: #eddacc;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.service-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-block .left-photo {
+    width: 42.52%;
+}
+
+.service-block .right-content {
+    width: 49.0244%;
+    padding-left: 20px;
+}
+
+.service-block .wrap-ser p {
+    letter-spacing: 0.9px;
+}
+
+.row-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row-title h6 {
+    font-size: 18px;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+.s-description p {
+    margin-bottom: 40px;
+    width: 62%;
+    letter-spacing: 0.9px;
+}
+
+.gallery {
+    padding-top: 110px;
+    padding-bottom: 75px;
+}
+
+.gallery .gallery-block {
+    margin-top: 46px;
+    position: relative;
+}
+
+.gallery .galley-wrapper {
+    width: 64.0625%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery .g-33 {
+    width: 32.03252%;
+}
+
+.gallery .g-66 {
+    width: 66.01626%;
+}
+
+.gallery .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery .gallery-photo {
+    margin-bottom: 1.85%;
+}
+
+.gallery .gallery-row.fl-end {
+    align-items: flex-end;
+}
+
+.gallery .btn-gallery {
+    width: 8.5%;
+    height: 8.5%;
+    display: block;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.gallery .btn-next {
+    background-image: url(../images/arr-next.png);
+    border: 1px solid #eddacc;
+    background-color: #eddacc;
+    left: 34%;
+    top: 0;
+}
+
+.gallery .btn-prev {
+    background-image: url(../images/arr-prev.png);
+    border: 1px solid #eddacc;
+    right: 34%;
+    bottom: 1.85%;
+}
+
+.footer-info-wrapper,
+.book-app-wrapper,
+.services-wrapper {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-app {
+    padding-top: 94px;
+    padding-bottom: 65px;
+    background-color: #eddacc;
+}
+
+.book-app .book-app-title h1 {
+    font-family: "Cameliya Stark";
+    color: #232323;
+    font-size: 78px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.book-app .book-button a {
+    font-size: 18px;
+    color: #232323;
+    position: relative;
+}
+
+.book-app .book-button .bk-prev {
+    padding-left: 25px;
+    padding-right: 10px;
+    background-image: url(../images/bk-prev.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.book-app .book-button .bk-next {
+    padding-right: 25px;
+    background-image: url(../images/bk-next.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+}
+
+.book-app .list-book-app li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.book-app .list-book-app li.active a {
+    font-size: 40px;
+    color: #232323;
+    text-transform: uppercase;
+}
+
+.book-app .list-book-app a {
+    font-size: 22px;
+    color: #eddacc;
+    text-transform: uppercase;
+}
+
+.book-app .list-book-app li.active {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.book-app ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.book-app .book-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.book-app-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.book-app-display .display-33 {
+    width: 33.3333%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.book-app-display .profile-info {
+    padding-left: 15px;
+}
+
+.footer-row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.footer-row-1 h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #dfc7b5;
+}
+
+.footer-row-1 .contact-link {
+    font-size: 22px;
+    color: #232323;
+    display: inline-block;
+    padding-left: 20px;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.footer-row-1 .phone-link {
+    background-image: url(../images/phone-icon.png);
+}
+
+.footer-row-1 .mail-link {
+    background-image: url(../images/mail-icon.png);
+}
+
+.footer-row-1 .location-link {
+    background-image: url(../images/location-icon.png);
+}
+
+.footer-row-1 .time-link {
+    background-image: url(../images/clock-icon.png);
+}
+
+.footer-row-1 .info-collum-1 {
+    width: 33.333%;
+}
+
+.footer-row-1 .info-collum-2 {
+    width: 200px;
+}
+
+.footer-row-1 .info-collum-3 {
+    width: 41.057%;
+}
+
+.footer-row-2 .nav-menu a::before {
+    display: none;
+}
+
+.footer-row-2 .header-nav {
+    position: relative;
+}
+
+.footer-row-2 .nav-menu {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.footer-row-2 .nav-menu li {
+    padding: 0;
+}
+
+.footer-row-2 .nav-menu a {
+    font-size: 18px;
+    color: #232323;
+    text-transform: capitalize;
+}
+
+.copyright {
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.gallery-photo .photo a::before {
+    display: block;
+    background-color: rgba(248, 249, 250, 0.7);
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.gallery-photo .photo a::after {
+    content: "+";
+    font-family: georgia, serif;
+    font-size: 4.5rem;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: #212529;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    z-index: 1;
+}
+
+.gallery-photo .photo:hover a::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery-photo .photo:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.gallery-photo .photo:hover a::after {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.gallery-photo .photo img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.gallery-photo .photo {
+    overflow: hidden;
+    position: relative;
+}
+
+#home-page,
+.welcome {
+    position: relative;
+}
+
+.line-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -120px;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.line-flex .line {
+    width: 23.4375%;
+    height: 100%;
+    position: relative;
+    border-left: 1px solid #ebebeb;
+    pointer-events: none;
+}
+
+.specials .line-flex {
+    z-index: 0;
+}
+
+.button-mobile {
+    display: none;
+}
+
+.header-nav__close {
+    display: none;
+}
+
+.content-mobile {
+    display: none;
+}
+
+.wrap-ser::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.wrap-ser::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.wrap-ser::-webkit-scrollbar-thumb {
+    background-color: #eddacc;
+    border: 1px solid #555555;
+}
+
+.book-button span {
+    cursor: pointer;
+}
